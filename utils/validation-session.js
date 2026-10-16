@@ -11,7 +11,7 @@ function getSessionErrorData(req, defaultValues) {
   return sessionInputData;
 }
 
-function flashErrorsToSession(req, data, data) {
+function flashErrorsToSession(req, data, action) {
   req.session.inputData = {
     hasError: true,
     ...data,
