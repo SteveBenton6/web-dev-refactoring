@@ -21,7 +21,6 @@ async function getAdmin(req, res) {
   res.render("admin", {
     posts: posts,
     inputData: sessionErrorData,
-    csrfToken: req.csrfToken(),
   });
 }
 
@@ -64,7 +63,6 @@ async function getSinglePost(req, res) {
   res.render("single-post", {
     post: post,
     inputData: sessionErrorData,
-    csrfToken: req.csrfToken(),
   });
 }
 
